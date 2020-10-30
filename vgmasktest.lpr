@@ -10,7 +10,7 @@ program vgmasktest;
 
 uses
   OpenVG,
-  RaspberryPi3,
+  RaspberryPi,
   GlobalConfig,
   GlobalConst,
   GlobalTypes,
