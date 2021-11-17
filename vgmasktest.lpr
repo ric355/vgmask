@@ -10,7 +10,7 @@ program vgmasktest;
 
 uses
   OpenVG,
-  RaspberryPi,
+  RaspberryPi3,
   GlobalConfig,
   GlobalConst,
   GlobalTypes,
@@ -83,6 +83,11 @@ var
   Direction : integer;
 
 begin
+  //this is required in order to enable alpha masking, otherwise the call to set
+  // VG_MASKING to TRUE won't work below.
+  VGShapesInitAlphaMaskSize(8);
+
+
   VGShapesInit(Width,Height);
 
   vgSeti(VG_MASKING, VG_TRUE);

@@ -107,8 +107,8 @@
     </SearchPaths>
     <CodeGeneration>
       <SmartLinkUnit Value="True"/>
-      <TargetProcessor Value="ARMV6"/>
-      <TargetController Value="RPIB"/>
+      <TargetProcessor Value="ARMV7A"/>
+      <TargetController Value="RPI3B"/>
       <TargetCPU Value="arm"/>
       <TargetOS Value="ultibo"/>
       <Optimizations>
